@@ -1,0 +1,19 @@
+main-menu {
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.menu-button {
+    padding: 0 5px;
+    margin: 5px 0;
+
+}
+
+.menu-button:not(:first-child) {
+    border-left: 1px solid aliceblue;
+}

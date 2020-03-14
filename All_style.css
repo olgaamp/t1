@@ -1,0 +1,19 @@
+
+body {
+    Font-family: PTSans, serif;
+    font-size: 14px;
+    display: block;
+    line-height: 22px;
+    padding: 0;
+    padding: 0;
+    width: 80%;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.card {
+    display: block;
+    width: 90%;
+    background-color: #9e9595;
+    margin: 10px auto;
+}
