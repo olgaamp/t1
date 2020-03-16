@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>Test_March_14</title>
     <link href="reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="path-slider-advanced-images23032018/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="All_style.css" rel="stylesheet">
     <link href="Header-style.css" rel="stylesheet">
     <link href="menu-style.css" rel="stylesheet">
-    <link href="slider-style.css" rel="stylesheet">
+   <!-- <link href="slider-style.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="slider-style.css" />
+    <script type="text/javascript" src="jscript.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
 <div class="card">
@@ -33,13 +37,59 @@
         <div class="menu-button">Прайс-лист</div>
         <div class="menu-button">Контакты</div>
     </main-menu>
-    <slider-image></slider-image>
+    <slider-image>
+       <!-- <div class="path-slider">-->
+            <!-- Slider items -->
+
+            <div id="wrapper">
+                <div id="container">
+                    <div class="sliderbutton" id="slideleft" onclick="slideshow.move(-1)"></div>
+                    <div id="slider">
+                        <ul>
+                            <li><img src="image/red-light-blur-bokeh-foto.jpg" width="558" height="235" alt="Первое фото" /></li>
+                            <li><img src="image/10436-makro_fotografiya-makrosemka-siyanie-krug-tekstura-1280x720.jpg" width="558" height="235" alt="Второе фото" /></li>
+                            <li><img src="photos/3.jpg" width="558" height="235" alt="Третье фото" /></li>
+                            <li><img src="photos/4.jpg" width="558" height="235" alt="Четвертое фото" /></li>
+                            <li><img src="photos/5.jpg" width="558" height="235" alt="Пятое фото" /></li>
+                        </ul>
+                    </div>
+                    <div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
+                    <ul id="pagination" class="pagination">
+                        <li onclick="slideshow.pos(0)"></li>
+                        <li onclick="slideshow.pos(1)"></li>
+                        <li onclick="slideshow.pos(2)"></li>
+                        <li onclick="slideshow.pos(3)"></li>
+                        <li onclick="slideshow.pos(4)"></li>
+                    </ul>
+                </div>
+            </div>
+       <!-- </div>-->
+    </slider-image>
     <div class="catalog">
         <div> menu</div>
         <div>cards</div>
     </div>
     <footer></footer>
     <feedback></feedback>
+
 </div>
+<!--<script src='https://rawgit.com/juliangarnier/anime/master/anime.min.js'></script>
+<script src='https://rawgit.com/lmgonzalves/path-slider/master/dist/path-slider.min.js'></script>
+<script src="path-slider-advanced-images23032018/js/index.js"></script>-->
+<script type="text/javascript">
+    var slideshow=new TINY.slider.slide('slideshow',{
+        id:'slider',
+        auto:1,
+        resume:false,
+        vertical:false,
+        navid:'pagination',
+        activeclass:'current',
+        position:0,
+        rewind:false,
+        elastic:true,
+        left:'slideleft',
+        right:'slideright'
+    });
+</script>
 </body>
 </html>
